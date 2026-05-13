@@ -1,0 +1,35 @@
+
+=== BÁO CÁO PHÂN TÍCH TIỀM NĂNG TĂNG TRƯỞNG ===
+
+1. Tổng quan dữ liệu:
+   - Tổng số mẫu: 15
+   - Nguồn: File Excel DLYC2-1.xlsx
+   - Tiêu chí: Tăng trưởng dự báo >= 15% là Tiềm năng cao, < 15% là Tiềm năng thấp.
+
+2. Kết quả phân loại:
+   - Loại 1: Tiềm năng cao
+     + Số lượng: 8
+     + Trung bình tăng trưởng: 20.12%
+     + Tỷ lệ: 53.33%
+   - Loại 2: Tiềm năng thấp
+     + Số lượng: 7
+     + Trung bình tăng trưởng: 11.00%
+     + Tỷ lệ: 46.67%
+
+3. Danh sách quận/huyện theo tiềm năng:
+Loại 1: Tiềm năng cao (>=15%) | Loại 2: Tiềm năng thấp (<15%)
+--- | ---
+Gia Lâm | Bắc Từ Liêm
+Hoài Đức | Cầu Giấy
+Hà Đông | Hai Bà Trưng
+Long Biên | Hoàng Mai
+Nam Từ Liêm | Thanh Xuân
+Sóc Sơn | Tây Hồ
+Thanh Trì | Đống Đa
+Đông Anh | 
+
+
+4. Ghi chú:
+   - Biểu đồ đã được lưu: phan_loai_tiem_nang.png
+   - Loại 1 tiềm năng cao là khu vực khách hàng nên mua.
+   - Loại 2 tiềm năng thấp cần cân nhắc thêm.

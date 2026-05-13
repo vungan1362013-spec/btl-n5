@@ -1,0 +1,38 @@
+
+=== BÁO CÁO PHÂN TÍCH DỮ LIỆU GIÁ BẤT ĐỘNG SẢN ===
+
+1. Tổng quan dữ liệu:
+   - Tổng số mẫu: 15
+   - Nguồn: File Excel DLYC2-1.xlsx
+
+2. Phân loại:
+   - Loại 1: Giá cao (>= 70 triệu/m²)
+     + Số lượng: 6
+     + Trung bình giá: 111.50 triệu/m²
+     + Tỷ lệ: 40.00%
+   - Loại 2: Giá trung bình/thấp (< 70 triệu/m²)
+     + Số lượng: 9
+     + Trung bình giá: 53.22 triệu/m²
+     + Tỷ lệ: 60.00%
+
+3. Danh sách quận/huyện theo loại:
+Loại 1 (>=70 triệu/m²) | Loại 2 (<70 triệu/m²)
+--- | ---
+Hai Bà Trưng | Bắc Từ Liêm
+Hà Đông | Cầu Giấy
+Long Biên | Gia Lâm
+Nam Từ Liêm | Hoài Đức
+Tây Hồ | Hoàng Mai
+Đống Đa | Sóc Sơn
+ | Thanh Trì
+ | Thanh Xuân
+ | Đông Anh
+
+
+4. Đánh giá:
+   - Biểu đồ phân loại đã được lưu vào file 'phan_loai_gia.png'.
+   - Loại 1 có giá trung bình cao hơn Loại 2.
+   - Khuyến nghị: Kiểm tra các quận/huyện thuộc Loại 2 nếu cần lựa chọn giá thấp hơn.
+
+5. Kết luận:
+   Phân tích hoàn tất. Kết quả đã được lưu trong file báo cáo.

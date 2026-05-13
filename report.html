@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Báo cáo đầu tư bất động sản</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f7fb; color: #222; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 24px; }
+    header { text-align: center; margin-bottom: 24px; }
+    h1 { margin: 0; font-size: 2.4rem; color: #0b3d91; }
+    p.subtitle { margin: 8px 0 0; color: #555; }
+    .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 24px 0; }
+    .card { background: white; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); padding: 18px; }
+    .card h2 { margin: 0 0 12px; font-size: 1.1rem; color: #0b3d91; }
+    .card p { margin: 0; font-size: 1.25rem; font-weight: 600; }
+    .search-box { margin: 24px 0; display: flex; justify-content: center; }
+    .search-box input { width: 100%; max-width: 480px; padding: 14px 16px; border-radius: 12px; border: 1px solid #ccc; font-size: 1rem; }
+    .table-section { margin-bottom: 32px; }
+    table { width: 100%; border-collapse: collapse; background: white; box-shadow: 0 8px 24px rgba(0,0,0,0.08); border-radius: 12px; overflow: hidden; }
+    th, td { padding: 14px 16px; text-align: left; border-bottom: 1px solid #eceff4; }
+    th { background: #0b3d91; color: white; position: sticky; top: 0; }
+    tbody tr:hover { background: #f1f6ff; }
+    .note { background: #ffffff; padding: 18px 20px; border-left: 4px solid #0b3d91; margin-bottom: 24px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Báo cáo đầu tư bất động sản</h1>
+      <p class="subtitle">Tổng hợp thông tin giá và tiềm năng tăng trưởng để hỗ trợ quyết định đầu tư.</p>
+    </header>
+
+    <div class="card-grid">
+      <div class="card"><h2>Tổng số mẫu</h2><p>15</p></div>
+      <div class="card"><h2>Giá cao</h2><p>6</p></div>
+      <div class="card"><h2>Giá thấp</h2><p>9</p></div>
+      <div class="card"><h2>Tiềm năng cao</h2><p>8</p></div>
+      <div class="card"><h2>Tiềm năng thấp</h2><p>7</p></div>
+    </div>
+
+    <div class="search-box">
+      <input id="searchInput" type="search" placeholder="Tìm quận/huyện..." oninput="filterTables()" />
+    </div>
+
+    <div class="note">
+      <strong>Hướng dẫn:</strong> Nhập quận/huyện để tìm nhanh thông tin giá và tiềm năng. Khách hàng nên mua khi tiềm năng cao và giá không quá cao; cân nhắc khi tiềm năng thấp.
+    </div>
+
+    <section class="table-section">
+      <h2>Phân loại theo giá</h2>
+      <table id="priceTable">
+        <thead>
+          <tr><th>Quận/Huyện</th><th>Giá hiện tại (triệu/m²)</th><th>Nhóm giá</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Cầu Giấy</td><td>68.00</td><td>Giá trung bình/thấp (<70)</td></tr><tr><td>Nam Từ Liêm</td><td>72.00</td><td>Giá cao (>=70)</td></tr><tr><td>Hà Đông</td><td>85.00</td><td>Giá cao (>=70)</td></tr><tr><td>Đông Anh</td><td>45.00</td><td>Giá trung bình/thấp (<70)</td></tr><tr><td>Gia Lâm</td><td>52.00</td><td>Giá trung bình/thấp (<70)</td></tr><tr><td>Hoàng Mai</td><td>58.00</td><td>Giá trung bình/thấp (<70)</td></tr><tr><td>Tây Hồ</td><td>210.00</td><td>Giá cao (>=70)</td></tr><tr><td>Long Biên</td><td>79.00</td><td>Giá cao (>=70)</td></tr><tr><td>Thanh Xuân</td><td>65.00</td><td>Giá trung bình/thấp (<70)</td></tr><tr><td>Hoài Đức</td><td>48.00</td><td>Giá trung bình/thấp (<70)</td></tr><tr><td>Bắc Từ Liêm</td><td>62.00</td><td>Giá trung bình/thấp (<70)</td></tr><tr><td>Sóc Sơn</td><td>26.00</td><td>Giá trung bình/thấp (<70)</td></tr><tr><td>Thanh Trì</td><td>55.00</td><td>Giá trung bình/thấp (<70)</td></tr><tr><td>Hai Bà Trưng</td><td>88.00</td><td>Giá cao (>=70)</td></tr><tr><td>Đống Đa</td><td>135.00</td><td>Giá cao (>=70)</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="table-section">
+      <h2>Phân loại theo tiềm năng</h2>
+      <table id="growthTable">
+        <thead>
+          <tr><th>Quận/Huyện</th><th>Tăng trưởng dự báo (%)</th><th>Tiềm năng</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Cầu Giấy</td><td>12.00%</td><td>Tiềm năng thấp (<15%)</td></tr><tr><td>Nam Từ Liêm</td><td>15.00%</td><td>Tiềm năng cao (>=15%)</td></tr><tr><td>Hà Đông</td><td>18.00%</td><td>Tiềm năng cao (>=15%)</td></tr><tr><td>Đông Anh</td><td>25.00%</td><td>Tiềm năng cao (>=15%)</td></tr><tr><td>Gia Lâm</td><td>22.00%</td><td>Tiềm năng cao (>=15%)</td></tr><tr><td>Hoàng Mai</td><td>10.00%</td><td>Tiềm năng thấp (<15%)</td></tr><tr><td>Tây Hồ</td><td>14.00%</td><td>Tiềm năng thấp (<15%)</td></tr><tr><td>Long Biên</td><td>16.00%</td><td>Tiềm năng cao (>=15%)</td></tr><tr><td>Thanh Xuân</td><td>11.00%</td><td>Tiềm năng thấp (<15%)</td></tr><tr><td>Hoài Đức</td><td>28.00%</td><td>Tiềm năng cao (>=15%)</td></tr><tr><td>Bắc Từ Liêm</td><td>13.00%</td><td>Tiềm năng thấp (<15%)</td></tr><tr><td>Sóc Sơn</td><td>20.00%</td><td>Tiềm năng cao (>=15%)</td></tr><tr><td>Thanh Trì</td><td>17.00%</td><td>Tiềm năng cao (>=15%)</td></tr><tr><td>Hai Bà Trưng</td><td>9.00%</td><td>Tiềm năng thấp (<15%)</td></tr><tr><td>Đống Đa</td><td>8.00%</td><td>Tiềm năng thấp (<15%)</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="table-section">
+      <h2>Thông tin tổng hợp</h2>
+      <table id="combinedTable">
+        <thead>
+          <tr><th>Quận/Huyện</th><th>Giá hiện tại</th><th>Nhóm giá</th><th>Tăng trưởng</th><th>Tiềm năng</th><th>Khuyến nghị</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Cầu Giấy</td><td>68.00</td><td>Giá trung bình/thấp (<70)</td><td>12.00%</td><td>Tiềm năng thấp (<15%)</td><td>Cân nhắc</td></tr><tr><td>Nam Từ Liêm</td><td>72.00</td><td>Giá cao (>=70)</td><td>15.00%</td><td>Tiềm năng cao (>=15%)</td><td>Cân nhắc</td></tr><tr><td>Hà Đông</td><td>85.00</td><td>Giá cao (>=70)</td><td>18.00%</td><td>Tiềm năng cao (>=15%)</td><td>Cân nhắc</td></tr><tr><td>Đông Anh</td><td>45.00</td><td>Giá trung bình/thấp (<70)</td><td>25.00%</td><td>Tiềm năng cao (>=15%)</td><td>Nên mua</td></tr><tr><td>Gia Lâm</td><td>52.00</td><td>Giá trung bình/thấp (<70)</td><td>22.00%</td><td>Tiềm năng cao (>=15%)</td><td>Nên mua</td></tr><tr><td>Hoàng Mai</td><td>58.00</td><td>Giá trung bình/thấp (<70)</td><td>10.00%</td><td>Tiềm năng thấp (<15%)</td><td>Cân nhắc</td></tr><tr><td>Tây Hồ</td><td>210.00</td><td>Giá cao (>=70)</td><td>14.00%</td><td>Tiềm năng thấp (<15%)</td><td>Cân nhắc</td></tr><tr><td>Long Biên</td><td>79.00</td><td>Giá cao (>=70)</td><td>16.00%</td><td>Tiềm năng cao (>=15%)</td><td>Cân nhắc</td></tr><tr><td>Thanh Xuân</td><td>65.00</td><td>Giá trung bình/thấp (<70)</td><td>11.00%</td><td>Tiềm năng thấp (<15%)</td><td>Cân nhắc</td></tr><tr><td>Hoài Đức</td><td>48.00</td><td>Giá trung bình/thấp (<70)</td><td>28.00%</td><td>Tiềm năng cao (>=15%)</td><td>Nên mua</td></tr><tr><td>Bắc Từ Liêm</td><td>62.00</td><td>Giá trung bình/thấp (<70)</td><td>13.00%</td><td>Tiềm năng thấp (<15%)</td><td>Cân nhắc</td></tr><tr><td>Sóc Sơn</td><td>26.00</td><td>Giá trung bình/thấp (<70)</td><td>20.00%</td><td>Tiềm năng cao (>=15%)</td><td>Nên mua</td></tr><tr><td>Thanh Trì</td><td>55.00</td><td>Giá trung bình/thấp (<70)</td><td>17.00%</td><td>Tiềm năng cao (>=15%)</td><td>Nên mua</td></tr><tr><td>Hai Bà Trưng</td><td>88.00</td><td>Giá cao (>=70)</td><td>9.00%</td><td>Tiềm năng thấp (<15%)</td><td>Cân nhắc</td></tr><tr><td>Đống Đa</td><td>135.00</td><td>Giá cao (>=70)</td><td>8.00%</td><td>Tiềm năng thấp (<15%)</td><td>Cân nhắc</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <script>
+    function filterTables() {
+      const filter = document.getElementById('searchInput').value.toLowerCase();
+      const tables = ['priceTable', 'growthTable', 'combinedTable'];
+      tables.forEach(id => {
+        const tbody = document.querySelector('#' + id + ' tbody');
+        tbody.querySelectorAll('tr').forEach(row => {
+          const text = row.textContent.toLowerCase();
+          row.style.display = text.includes(filter) ? '' : 'none';
+        });
+      });
+    }
+  </script>
+</body>
+</html>

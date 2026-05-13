@@ -1,0 +1,35 @@
+
+=== BÁO CÁO PHÂN TÍCH GIÁ HIỆN TẠI ===
+
+1. Tổng quan dữ liệu:
+   - Tổng số mẫu: 15
+   - Nguồn: File Excel DLYC2-1.xlsx
+   - Tiêu chí: Giá hiện tại >= 70 triệu/m² là Loại 1 (Giá cao), < 70 triệu/m² là Loại 2 (Giá thấp).
+
+2. Kết quả phân loại:
+   - Loại 1: Giá cao
+     + Số lượng: 6
+     + Trung bình giá: 111.50 triệu/m²
+     + Tỷ lệ: 40.00%
+   - Loại 2: Giá thấp
+     + Số lượng: 9
+     + Trung bình giá: 53.22 triệu/m²
+     + Tỷ lệ: 60.00%
+
+3. Danh sách quận/huyện theo giá:
+Loại 1: Giá cao (>=70 triệu/m²) | Loại 2: Giá thấp (<70 triệu/m²)
+--- | ---
+Hai Bà Trưng | Bắc Từ Liêm
+Hà Đông | Cầu Giấy
+Long Biên | Gia Lâm
+Nam Từ Liêm | Hoài Đức
+Tây Hồ | Hoàng Mai
+Đống Đa | Sóc Sơn
+ | Thanh Trì
+ | Thanh Xuân
+ | Đông Anh
+
+
+4. Ghi chú:
+   - Biểu đồ đã được lưu: phan_loai_gia.png
+   - Kết quả giúp phân biệt khu vực giá cao và giá thấp.

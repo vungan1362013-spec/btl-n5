@@ -1,0 +1,38 @@
+BÁO CÁO KẾT QUẢ CHI TIẾT CÁC BƯỚC THỰC HIỆN
+==================================================
+
+=== PHẦN 1: PHÂN TÍCH TỔ HỢP (TÍNH GIAI THỪA) ===
+1. Dữ liệu: số lượng nhân sự n = 7
+2. Yêu cầu: Tính số cách sắp xếp thứ tự đứng của các thành viên theo một hàng ngang.
+3. Công thức: n! = 1 * 2 * 3 * ... * n
+4. Kết quả: 7! = 5040
+
+=== PHẦN 2: KIỂM SOÁT CHẤT LƯỢNG SẢN XUẤT (TÍNH GIÁ TRỊ TRUNG BÌNH) ===
+1. Dữ liệu: số lượng sản phẩm lỗi theo ngày trong tuần.
+   Dãy số: [12, 15, 8, 20, 14, 11, 10]
+   Số lượng phần tử: 7
+2. Tổng số sản phẩm lỗi trong tuần: 90
+3. Công thức trung bình: trung bình = tổng / số lượng
+4. Kết quả: giá trị trung bình số sản phẩm lỗi mỗi ngày = 12.86
+
+=== PHẦN 3: DỰ BÁO TĂNG TRƯỞNG TÀI CHÍNH (LÃI KÉP HÀNG THÁNG) ===
+1. Dữ liệu: số tiền gửi ban đầu P = 500,000,000 VNĐ
+   Lãi suất cố định hàng tháng r = 0.80%
+   Thời gian gửi t = 12 tháng
+2. Công thức lãi kép: A = P * (1 + r)^t
+3. Kết quả sau tháng thứ 12:
+   Tổng số tiền cuối cùng (gốc + lãi) = 550,169,347 VNĐ
+   Số tiền lợi nhuận lãi ròng = 50,169,347 VNĐ
+4. Chi tiết số dư theo từng tháng:
+   - Tháng 01: 504,000,000 VNĐ
+   - Tháng 02: 508,032,000 VNĐ
+   - Tháng 03: 512,096,256 VNĐ
+   - Tháng 04: 516,193,026 VNĐ
+   - Tháng 05: 520,322,570 VNĐ
+   - Tháng 06: 524,485,151 VNĐ
+   - Tháng 07: 528,681,032 VNĐ
+   - Tháng 08: 532,910,480 VNĐ
+   - Tháng 09: 537,173,764 VNĐ
+   - Tháng 10: 541,471,154 VNĐ
+   - Tháng 11: 545,802,923 VNĐ
+   - Tháng 12: 550,169,347 VNĐ
